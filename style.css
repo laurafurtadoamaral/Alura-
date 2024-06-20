@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --cor-de-fundo: #00030c;
+  --branco-principal: #ffffff;
+  --branco-secundario: #f9f9f9;
+  --cinza: #c0c0c0;
+  --azul: #167bf7;
+  --fonte: inter, sans-serif;
+  --fonte28: 1.75rem;
+  --fonte16: 1rem;
+  --fonte12: 0.75rem;
+  --fonte48: 3rem;
+  --fonte32: 2rem;
+  --fonte14: 0.875rem;
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+  color: var(--branco-principal);
+  font-family: var(--fonte);
+  margin: 0;
+}
+
+button:hover,
+a:hover {
+  cursor: pointer;
+}
+
+.container {
+  height: 100vh;
+}
+
+.apresentacao {
+  background-image: url(./img/Background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.apresentacao__conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  padding: 7% 5%;
+  text-align: center;
+}
+
+.apresentacao__titulo {
+  font-size: var(--fonte28);
+  width: 90%;
+}
+
+.imagem__combo {
+  width: 400px;
+}
+
+.apresentacao__botoes {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.apresentacao__botao__combo {
+  width: 512px;
+  height: 56px;
+  border-radius: 8px;
+  background-color: var(--azul);
+  color: var(--branco-principal);
+  font-size: var(--fonte16);
+  margin-top: 50px;
+  border: none;
+  height: 60px;
+  width: 83%;
+}
+
+.apresentacao__botao__alura {
+  width: 512px;
+  height: 56px;
+  border-radius: 8px;
+  color: var(--branco-principal);
+  font-size: var(--fonte16);
+  background-color: transparent;
+  border: var(--branco-principal) 1px solid;
+  height: 60px;
+  width: 83%;
+}
+
+.apresentacao__paragafo {
+  color: var(--cinza);
+  font-size: var(--fonte12);
+  font-family: var(--fonte);
+  padding-top: 10px;
+}
+
+.corpo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  padding: 0 10%;
+}
+
+.assista__imagem {
+  width: 45%;
+}
+
+.corpo__assista {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 10px;
+}
+
+.assista__titulo {
+  margin: 0;
+  font: var(--fonte);
+  font-size: var(--fonte48);
+  font-weight: 700;
+  color: var(--branco-principal);
+}
+
+.assista__paragrafo {
+  font: var(--fonte);
+  font-size: var(--fonte16);
+  color: var(--branco-secundario);
+  margin: 0;
+  font-weight: 300;
+  width: 100%;
+  line-height: 150%;
+}
+
+.corpo__assine {
+}
+
+.assine__paragrafo {
+  font-family: var(--fonte);
+  font-size: 1rem;
+  color: var(--branco-secundario);
+  line-height: 150%;
+  font-weight: 300;
+}
+
+.assine__button {
+  color: var(--branco-principal);
+  font-family: var(--fonte);
+  font-size: var(--fonte16);
+  font-weight: 300;
+  background-color: var(--azul);
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  width: 162px;
+  height: 56px;
+}
+
+.assine__imagem {
+  height: 50%;
+}
+
+.baixe__imagem {
+  height: 50%;
+}
+
+.corpo__baixe {
+}
+
+.baixe__titulo {
+  margin: 0;
+  font-family: var(--fonte);
+  font-size: var(--fonte48);
+  color: var(--branco-principal);
+}
+
+.baixe__paragrafo {
+  font-family: var(--fonte);
+  font-size: var(--fonte16);
+  line-height: 150%;
+  font-weight: 300;
+  color: var(--branco-secundario);
+}
+
+.dispositivos {
+  height: 60vh !important;
+}
+
+.dispositivos__titulo {
+  font-family: var(--fonte);
+  font-size: var(--fonte48);
+  color: var(--branco-principal);
+  font-weight: 700;
+  text-align: center;
+}
+
+.dispositivos__compativeis {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 70px;
+}
+
+.dispositivos__legenda {
+  font-family: var(--fonte);
+  font-size: var(--fonte32);
+  color: var(--branco-principal);
+  font-weight: 600;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2%;
+}
+
+.footer__logo {
+  width: 102px;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding-top: 40px;
+}
+
+.footer__nav__link {
+  margin: 0;
+  color: var(--branco-principal);
+  font-size: var(--fonte16);
+}
+
+.footer__paragrafo {
+  margin: 0;
+  color: var(--cinza);
+  text-align: center;
+  font-size: var(--fonte14);
+  padding-top: 20px;
+}
