@@ -20,15 +20,21 @@ body {
   color: var(--branco-principal);
   font-family: var(--fonte);
   margin: 0;
+  text-decoration: none;
 }
 
-button:hover,
+body::-webkit-scrollbar {
+  display: none;
+}
+
 a:hover {
   cursor: pointer;
 }
 
 .container {
-  height: 100vh;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 50%, 50%;
 }
 
 .apresentacao {
@@ -65,34 +71,31 @@ a:hover {
 }
 
 .apresentacao__botao__combo {
-  width: 512px;
-  height: 56px;
+  height: 40px;
+  width: 83%;
   border-radius: 8px;
+  border: none;
   background-color: var(--azul);
   color: var(--branco-principal);
   font-size: var(--fonte16);
-  margin-top: 50px;
-  border: none;
-  height: 60px;
-  width: 83%;
+  margin-top: 40px;
+  padding-top: 20px;
 }
 
 .apresentacao__botao__alura {
-  width: 512px;
-  height: 56px;
+  height: 40px;
+  width: 83%;
   border-radius: 8px;
+  border: var(--branco-principal) 1px solid;
   color: var(--branco-principal);
   font-size: var(--fonte16);
   background-color: transparent;
-  border: var(--branco-principal) 1px solid;
-  height: 60px;
-  width: 83%;
+  padding-top: 20px;
 }
 
 .apresentacao__paragafo {
   color: var(--cinza);
   font-size: var(--fonte12);
-  font-family: var(--fonte);
   padding-top: 10px;
 }
 
@@ -133,28 +136,30 @@ a:hover {
   line-height: 150%;
 }
 
-.corpo__assine {
-}
-
 .assine__paragrafo {
-  font-family: var(--fonte);
   font-size: 1rem;
   color: var(--branco-secundario);
   line-height: 150%;
   font-weight: 300;
 }
 
+.corpo__assine {
+  display: grid;
+  grid-template-rows: 50%, 50%;
+  align-items: center;
+}
+
 .assine__button {
   color: var(--branco-principal);
-  font-family: var(--fonte);
   font-size: var(--fonte16);
   font-weight: 300;
   background-color: var(--azul);
   border-radius: 8px;
   border: none;
+  width: 30%;
+  height: 37px;
   text-align: center;
-  width: 162px;
-  height: 56px;
+  padding-top: 19px;
 }
 
 .assine__imagem {
@@ -165,18 +170,13 @@ a:hover {
   height: 50%;
 }
 
-.corpo__baixe {
-}
-
 .baixe__titulo {
   margin: 0;
-  font-family: var(--fonte);
   font-size: var(--fonte48);
   color: var(--branco-principal);
 }
 
 .baixe__paragrafo {
-  font-family: var(--fonte);
   font-size: var(--fonte16);
   line-height: 150%;
   font-weight: 300;
@@ -184,11 +184,10 @@ a:hover {
 }
 
 .dispositivos {
-  height: 60vh !important;
+  height: 70vh !important;
 }
 
 .dispositivos__titulo {
-  font-family: var(--fonte);
   font-size: var(--fonte48);
   color: var(--branco-principal);
   font-weight: 700;
@@ -203,7 +202,6 @@ a:hover {
 }
 
 .dispositivos__legenda {
-  font-family: var(--fonte);
   font-size: var(--fonte32);
   color: var(--branco-principal);
   font-weight: 600;
@@ -215,6 +213,8 @@ footer {
   flex-direction: column;
   align-items: center;
   padding-bottom: 2%;
+  gap: 12px;
+  padding: 0 5% 2% 5%;
 }
 
 .footer__logo {
